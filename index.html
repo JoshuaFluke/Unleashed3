@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="workout">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Beast Mode</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:500">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body ng-controller="DropdownCtrl">
+	<div id="wrapper">
+		<div class="jumbotron">
+			<h1><a ui-sref="go">Unleash The Beast</a></h1>
+		</div>
+		<!--- TOP NAV BAR---->
+		<div class="navbar">
+			<div class="Home"></div>
+			<div id="item1">
+				<!-- Motivation button -->
+				<div  id="item1">
+					<div class="btn-group" uib-dropdown is-open="status.isopen">
+						<button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">
+							Motivation <span class="glyphicon glyphicon-triangle-bottom"> </span>
+						</button>
+						<ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+							<li role="menuitem"><a href="#">Lifestyle</a></li>
+							<li role="menuitem"><a href="#">Music</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Diet button -->
+				<div  id="item1">
+					<div class="btn-group" uib-dropdown is-open="status.isopen">
+						<button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">
+							Diet <span class="glyphicon glyphicon-triangle-bottom"> </span>
+						</button>
+						<ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+							<li role="menuitem"><a href="#">Supplements</a></li>
+							<li role="menuitem"><a href="#">Fit Meals</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Motivation button -->
+				<div  id="item1">
+					<div class="btn-group" uib-dropdown is-open="status.isopen">
+						<button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle ng-disabled="disabled">
+							Lifting Buddies <span class="glyphicon glyphicon-triangle-bottom"> </span>
+						</button>
+						<ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
+							<li role="menuitem"><a href="#">Trainers</a></li>
+							<li role="menuitem"><a href="#">Friends</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-------------Main content ----------------->
+		<div><input type="text" ng-model="commentText"></div>
+		<div ui-view></div>
+		
+
+
+		<!---- Scripts ---->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+		<script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
+		<script src="mainCtrl.js"></script>
+		<script src="config.js"></script>
+		
+</body>
+
+</html>
