@@ -8,59 +8,42 @@ app.controller('DropdownCtrl', function ($scope, fbService) {
 	};
 
 	$scope.comments = fbService.getAllComments()  //firebase object
-	// comments.$bindTo($scope, 'comments')
 
- 
+ 	$scope.username = fbService.getNames()
 
 	$scope.addComment = function () {
 		console.log($scope.commentText)
 		$scope.comments.$add($scope.commentText)
-
+		
+		$scope.username.add($scope.commentName)
 	}
-
-
 });
 
 
-app.controller('testctrl', function ($scope) {
-
+app.controller('bmiCtrl', function ($scope) {
 	$scope.hello = "enter a name"
-
 	$scope.x = true;
 	
-	// $scope.change = function () {
-	// 	 debugger
-	// 	if($scope.random == '' && $scope.whatever.$dirty) {
+	$scope.change = function () {
+		 debugger
+		if($scope.random == '' && $scope.whatever.$dirty) {
 
-	// 		$scope.hello = "enter a name"
-	// 		$scope.showbtn = false
+			$scope.hello = "enter a name"
+			$scope.showbtn = false
 
-	// 	}
-	// 	else {
+		}
+		else {
 
-	// 		$scope.hello = 'hello ' + $scope.random
-	// 		$scope.showbtn = true
-	// 	}	
-	// }
+			$scope.hello = 'hello ' + $scope.random
+			$scope.showbtn = true
+		}	
+	}
 	
 	
 	$scope.calculate = function (){
 		var weight = $scope.weight * .45
 		var height = $scope.height * .025
 		
-		
 		$scope.results = weight /  Math.pow(height, 2) 
-		
-		
-		
-		
-		
 	}
-	
-
-
-
-	
-
-
 });

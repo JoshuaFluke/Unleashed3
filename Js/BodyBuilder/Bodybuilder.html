@@ -1,54 +1,69 @@
-<div ng-controller="DropdownCtrl">	
-	
+<div ng-controller="DropdownCtrl">
+
 	<div class='picker'>Pick Two</div>
-	
-<div class='chkdesc'><input type="checkbox" id="arms" name="4[]" value="abc" >Arms</td></div>
-<div class='chkdesc'><input type="checkbox" id="legs" name="4[]" value="xyz" >Legs</td></div>
-<div class='chkdesc'><input type="checkbox" id="chest" name="4[]" value="qwe" >Chest</td></div>
-<div class='chkdesc'><input type="checkbox" id="back" name="4[]" value="pqr" >Back</td></div>
-<div class='chkdesc'><input type="checkbox" id="shoulders" name="4[]" value="pqr" >shoulders</td></div>
-	
-	
+
+	<div class='chkdesc'>
+		<input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
+	</div>
+	<div class='chkdesc'>
+		<input type="checkbox" id="legs" name="4[]" value="xyz">Legs</td>
+	</div>
+	<div class='chkdesc'>
+		<input type="checkbox" id="chest" name="4[]" value="qwe">Chest</td>
+	</div>
+	<div class='chkdesc'>
+		<input type="checkbox" id="back" name="4[]" value="pqr">Back</td>
+	</div>
+	<div class='chkdesc'>
+		<input type="checkbox" id="shoulders" name="4[]" value="pqr">shoulders</td>
+	</div>
+
 	<button type="submit" class="go" ng-click="counter">Go!</button>
-	<div class="arms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quia qui, non dignissimos a, cupiditate impedit officia reprehenderit amet quidem deserunt consequatur odit est, illo error esse nostrum molestiae molestias.</div>
-	<div class="chest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus provident libero pariatur repellat, aperiam totam ex ipsum. Magni recusandae quos totam, dolores beatae illo similique perspiciatis. Cumque dolorum, rem minima.</div>
-	<div class="legs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque culpa, id animi vel ab molestiae eaque blanditiis atque sequi illo nulla reiciendis veritatis, quis alias molestias voluptatibus perferendis quia.</lorme></div>
-	<div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum a quisquam, molestias dolor dolore nihil molestiae. Sed perspiciatis, cupiditate veritatis ut, inventore quibusdam, aliquam est distinctio saepe qui expedita!</div>
-	<div class="shoulders">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non aspernatur doloremque doloribus illum dolores rerum nihil dolore pariatur ipsam minus nobis aliquam voluptate totam, dicta qui, voluptatum optio, recusandae.</div>
-	
-	
+	<div class="arms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quia qui, non dignissimos a, cupiditate impedit officia reprehenderit
+		amet quidem deserunt consequatur odit est, illo error esse nostrum molestiae molestias.</div>
+	<div class="chest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus provident libero pariatur repellat, aperiam totam ex ipsum.
+		Magni recusandae quos totam, dolores beatae illo similique perspiciatis. Cumque dolorum, rem minima.</div>
+	<div class="legs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque culpa, id animi vel ab molestiae eaque blanditiis
+		atque sequi illo nulla reiciendis veritatis, quis alias molestias voluptatibus perferendis quia.</lorme>
+	</div>
+	<div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum a quisquam, molestias dolor dolore nihil molestiae.
+		Sed perspiciatis, cupiditate veritatis ut, inventore quibusdam, aliquam est distinctio saepe qui expedita!</div>
+	<div class="shoulders">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non aspernatur doloremque doloribus illum dolores
+		rerum nihil dolore pariatur ipsam minus nobis aliquam voluptate totam, dicta qui, voluptatum optio, recusandae.</div>
+
 	<div class="comments">
-		<input type="text" ng-model="commentText" placeholder="What do you think?"/> 
-		<button ng-click="addComment()" type="submit" >Add Comment</button>
-		<div>{{commentText}}</div>
-		
-	</div>
-	<div ng-repeat="comment in comments">
-	{{comment.$value}}
+		<input type="text" ng-model="commentName" placeholder="Enter a name" />
+		<input type="text" ng-model="commentText" placeholder="What do you think?" />
+
+		<button ng-click="addComment()" type="submit">Add Comment</button>
 	</div>
 	
-	<!---<input type="text" id="bs"/>--->
+	<div ng-repeat="name in username"  class="comments">
+		{{name.$value}} says
+		<div ng-repeat="comment in comments" class='comments'>
+			{{comment.$value}} 
+		</div>
 	</div>
-	
-	<div ng-controller="testctrl">
-		<form name='whatever'>
-		<input type="text" ng-model='random' ng-change='change()'/>
-		{{hello}}
-		</form>
-		<button ng-click="x = true" >Login</button>
-		<button ng-click="x = false">Sign up</button>
-		<div ng-show="x">Login Form</div>
-		<div ng-hide = "x">Sign up Form</div>
-		
-		
-		
-		<div><input type="number" ng-model='age'/>Enter your age</div>
-		<div><input type = "number" ng-model="height"/>Enter your height in inches</div>
-		<div><input type ="number"ng-model="weight"/>Enter your weight</div>
-		<div>{{results}}</div>
-		<button type="submit" ng-click='calculate()'>calculate</button>
-		
-		
-		
-	</div>
-	<script src="Js/Angular/jQuery.js"></script>
+</div>
+
+</div>
+
+<div ng-controller="bmiCtrl">
+	<form name='whatever'>
+		<input type="text" ng-model='random' ng-change='change()' /> {{hello}}
+	</form>
+	<button ng-click="x = true">Login</button>
+	<button ng-click="x = false">Sign up</button>
+	<div ng-show="x">Login Form</div>
+	<div ng-hide="x">Sign up Form</div>
+
+	<div>
+		<input type="number" ng-model='age' />Enter your age</div>
+	<div>
+		<input type="number" ng-model="height" />Enter your height in inches</div>
+	<div>
+		<input type="number" ng-model="weight" />Enter your weight</div>
+	<div>{{results}}</div>
+	<button type="submit" ng-click='calculate()'>calculate</button>
+</div>
+<script src="Js/Angular/jQuery.js"></script>
