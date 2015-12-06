@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body ng-controller="DropdownCtrl">
-	
+<div ng-controller="DropdownCtrl">	
 	
 	<div class='picker'>Pick Two</div>
 	
@@ -25,17 +18,37 @@
 	
 	
 	<div class="comments">
-		<input type="text" ng-model="commentText" placeholder="What do you think?"/> {{$scope.commentText}}
+		<input type="text" ng-model="commentText" placeholder="What do you think?"/> 
 		<button ng-click="addComment()" type="submit" >Add Comment</button>
+		<div>{{commentText}}</div>
 		
 	</div>
-	
-	{{comments}}
-	
+	<div ng-repeat="comment in comments">
+	{{comment.$value}}
+	</div>
 	
 	<!---<input type="text" id="bs"/>--->
+	</div>
 	
-	<script src="JS/Angular/jQuery.js"></script>
-</body>
-
-</html>	
+	<div ng-controller="testctrl">
+		<form name='whatever'>
+		<input type="text" ng-model='random' ng-change='change()'/>
+		{{hello}}
+		</form>
+		<button ng-click="x = true" >Login</button>
+		<button ng-click="x = false">Sign up</button>
+		<div ng-show="x">Login Form</div>
+		<div ng-hide = "x">Sign up Form</div>
+		
+		
+		
+		<div><input type="number" ng-model='age'/>Enter your age</div>
+		<div><input type = "number" ng-model="height"/>Enter your height in inches</div>
+		<div><input type ="number"ng-model="weight"/>Enter your weight</div>
+		<div>{{results}}</div>
+		<button type="submit" ng-click='calculate()'>calculate</button>
+		
+		
+		
+	</div>
+	<script src="Js/Angular/jQuery.js"></script>
