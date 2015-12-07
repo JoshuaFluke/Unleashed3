@@ -28,7 +28,7 @@ angular.module('workout')
     console.log($scope.commentText)
     $scope.comments.$add($scope.commentText)
 
-    $scope.username.add($scope.commentName)
+    $scope.username.$add($scope.commentName)
   }
 })
 
