@@ -13,17 +13,16 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('athletic', {
             url: '/athletic',
-            templateUrl: 'Js/Athletic/Athletic.html'
+            templateUrl: 'Js/Athletic/athletic.html'
         })
         .state('agile', {
             url: '/agile',
-            templateUrl: 'Js/Agile/agile.html'
+            templateUrl: 'Js/agile/agile.html'
         })
 
     $urlRouterProvider
         .otherwise('/')
 });
-
 
 app.constant('fb', {
     url: 'https://liftfriendly.firebaseio.com/'
