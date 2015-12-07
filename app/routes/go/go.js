@@ -6,7 +6,7 @@ angular.module('workout')
   $stateProvider
     .state('go', {
       url: '/go',
-      templateUrl: 'routes/go/agile.html'
+      templateUrl: 'routes/go/go.html'
     })
 })
 
