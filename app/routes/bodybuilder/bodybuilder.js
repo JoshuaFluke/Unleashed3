@@ -39,9 +39,13 @@ angular.module('workout')
   $(":checkbox[name='4[]']").change(function () {
     if ($(":checkbox[name='4[]']:checked").length == 2)
       $(':checkbox:not(:checked)').prop('disabled', true);
-    else
-      $(':checkbox:not(:checked)').prop('disabled', false);
+
+    else{
+      $(':checkbox:not(:checked)').prop('disabled', false);}
   });
+
+
+
 
   $(".go").on('click', function () {
 
