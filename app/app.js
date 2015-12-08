@@ -28,8 +28,4 @@ service('fbService', function ($firebaseArray, $firebaseObject, fbRef) {
     return $firebaseArray(ref);
   }
 
-  this.getNames = function () {
-    var ref = fbRef.child('Names');
-    return $firebaseArray(ref);
-  }
 })

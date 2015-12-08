@@ -22,34 +22,14 @@ angular.module('workout')
 
   $scope.comments = fbService.getAllComments()  //firebase object
 
-  $scope.username = fbService.getNames()
-
   $scope.addComment = function () {
     console.log($scope.commentText)
     $scope.comments.$add($scope.commentText)
 
-    $scope.username.$add($scope.commentName)
   }
 })
 
 .controller('bmiCtrl', function ($scope) {
-  $scope.hello = "enter a name"
-  $scope.x = true;
-
-  $scope.change = function () {
-    debugger
-    if($scope.random == '' && $scope.whatever.$dirty) {
-
-      $scope.hello = "enter a name"
-      $scope.showbtn = false
-
-    }
-    else {
-
-      $scope.hello = 'hello ' + $scope.random
-      $scope.showbtn = true
-    }
-  }
 
 
   $scope.calculate = function (){
@@ -59,6 +39,9 @@ angular.module('workout')
     $scope.results = weight /  Math.pow(height, 2)
   }
 
+
+
+  //-------------------------------Jquery------------------------------------//
 
   $(":checkbox[name='4[]']").change(function () {
     if ($(":checkbox[name='4[]']:checked").length == 2)

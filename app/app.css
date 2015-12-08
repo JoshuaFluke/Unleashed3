@@ -1,168 +1,180 @@
 body {
-  height: 100%;
-  background-image: url('./assets/gym-weights.jpg');
-  background-size: cover;
-  font-family: 'Orbitron', sans-serif;
+    height: 100%;
+    background-image: url('./assets/gym-weights.jpg');
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
 }
-
 
 .navbar {
 
-  font-family: 'Orbitron', sans-serif;
-  font-size: 30px;
-  background-color:rgba(0,0,0,.5);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #single-button {
-  font-family: 'Orbitron', sans-serif;
-  background-color: rgba(0,0,0,0,.5);
-  color: orange;
-  font-size:30px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgba(0, 0, 0, 0, .5);
+    color: orange;
+    font-size: 30px;
 }
 
 .jumbotron {
-  margin: 0;
-  background-color:rgba(0,0,0,.5);
-  text-align: center;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
 
 }
 
 .jumbotron > h1 > a {
 
-  text-decoration: none;
-  color: orange
+    text-decoration: none;
+    color: orange
 }
 
 .jumbotron > h1 > a:hover {
 
-  color: white
+    color: white
 }
 
 .btn-default {
-  background-color:rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 
 }
 
 .btn {
-  background-color:rgba(0,0,0,0);
-  border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
 .Home {
 
-  padding-top: 5px;
-  margin-left: 30%;
-  Float:left;
-  color: orange;
+    padding-top: 5px;
+    margin-left: 30%;
+    Float: left;
+    color: orange;
 
 }
 
 #item1 {
-  padding-right: 20px;
-  padding-left: 20px;
-  float:left;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
 }
-
-
 
 /* Video Divs */
 
 #content, #content2, #content3 {
-  display: none;
-  float:left;
-  margin-left:20%;
-  position: relative;
-  background-color:rgba(0,0,0,.5)
+    display: none;
+    float: left;
+    margin-left: 20%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5)
 }
 
 .video-container {
-  float:left;
+    float: left;
 
 }
 
-.warrior, .rogue, .monk{
-  float:left;
-  color: orange;
-  width: 500px;
-  font-size: 20px;
+.warrior, .rogue, .monk {
+    float: left;
+    color: orange;
+    width: 500px;
+    font-size: 20px;
 }
-
 
 .btndiv {
 
-  padding-top:2.5%;
-  margin-left: 37%;
+    padding-top: 2.5%;
+    margin-left: 37%;
 
 }
 
 #ID {
 
-  color: orange;
-  font-size: 30px;
-  padding-top: 50px;
-  padding-bottom: 35px;
+    color: orange;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 35px;
 
 }
 
 #getStarted {
 
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-
-
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 
 }
 
 /* test */
 
 .myButton, .myButton2, .myButton3 {
-  -moz-box-shadow: 0px 0px 20px 0px #fff6af;
-  -webkit-box-shadow: 0px 0px 20px 0px #fff6af;
-  box-shadow: 0px 0px 20px 0px #fff6af;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
-  background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-  background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-  background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-  background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
-  background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
-  background-color:#ffec64;
-  -moz-border-radius:23px;
-  -webkit-border-radius:23px;
-  border-radius:0px;
-  border:1px solid #ffaa22;
-  display:inline-block;
-  cursor:pointer;
-  color:#333333;
-  font-family:Arial;
-  font-size:15px;
-  font-weight:bold;
-  padding:14px 53px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #ffee66;
-  margin-right: 15px;
+    -moz-box-shadow: 0px 0px 20px 0px #fff6af;
+    -webkit-box-shadow: 0px 0px 20px 0px #fff6af;
+    box-shadow: 0px 0px 20px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    border-radius: 0px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 53px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+    margin-right: 15px;
 }
-.myButton:hover,.myButton2:hover,.myButton3:hover {
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
-  background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
-  background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
-  background-color:#ffab23;
-  text-decoration: none;
+
+.myButton:hover, .myButton2:hover, .myButton3:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+    text-decoration: none;
 }
+
 .myButton:active {
-  position:relative;
-  top:1px;
+    position: relative;
+    top: 1px;
 }
 
 .chest, .arms, .shoulders, .legs, .back {
-  display:none;
+    display: none;
+    background-color: rgba(0,0,0, .5);
+    color:white;
 }
 
-.comments {
-  display:none;
+.picker{
+
+    display: inline-block;
+
 }
+
+.title{
+
+    color: orange;
+
+}
+
+.bmi {
+
+
+}
+

@@ -1,67 +1,178 @@
 <div ng-controller="DropdownCtrl">
 
-    <div class='picker'>Pick Two</div>
+    <div class='picker'>Typically it's best to go with two main muscle groups
 
-    <div class='chkdesc'>
-        <input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
-    </div>
-    <div class='chkdesc'>
-        <input type="checkbox" id="legs" name="4[]" value="xyz">Legs</td>
-    </div>
-    <div class='chkdesc'>
-        <input type="checkbox" id="chest" name="4[]" value="qwe">Chest</td>
-    </div>
-    <div class='chkdesc'>
-        <input type="checkbox" id="back" name="4[]" value="pqr">Back</td>
-    </div>
-    <div class='chkdesc'>
-        <input type="checkbox" id="shoulders" name="4[]" value="pqr">shoulders</td>
+        <div class='chkdesc'>
+            <input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="legs" name="4[]" value="xyz">Legs</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="chest" name="4[]" value="qwe">Chest</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="back" name="4[]" value="pqr">Back</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="shoulders" name="4[]" value="pqr">Shoulders</td>
+        </div>
+        <button type="submit" class="go" ng-click="counter">Get at it!</button>
     </div>
 
-    <button type="submit" class="go" ng-click="counter">Go!</button>
-    <div class="arms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quia qui, non dignissimos a, cupiditate impedit officia reprehenderit
-        amet quidem deserunt consequatur odit est, illo error esse nostrum molestiae molestias.</div>
-    <div class="chest">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus provident libero pariatur repellat, aperiam totam ex ipsum.
-        Magni recusandae quos totam, dolores beatae illo similique perspiciatis. Cumque dolorum, rem minima.</div>
-    <div class="legs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque culpa, id animi vel ab molestiae eaque blanditiis
-        atque sequi illo nulla reiciendis veritatis, quis alias molestias voluptatibus perferendis quia.</lorme>
+    <div class="arms">
+        <div>The tricep is the largest muscle on the back of your upper arm. </span>
+            <ul>
+                <li>Tricep Pushdown</li>
+                <ul>
+                    <li>4 sets of 12 reps</li>
+                </ul>
+                <li>Close Grip Bench Press</li>
+                <ul>
+                    <li>3 sets of 12</li>
+                </ul>
+                <li>Overhead Tricep Extension</li>
+                <ul>
+                    <li>4 sets of 10</li>
+                </ul>
+                <li>Bent Tricep Extension</li>
+                <ul>
+                    <li>3 sets of 12</li>
+                </ul>
+                <li>Dips <span>There can be modifications for this</span></li>
+                <ul>
+                    <li>4 sets of</li>
+                </ul>
+            </ul>
+        </div>
+        <div><span class="title">Biceps: Pull yourself over that ledge.</span>
+            <ul>
+                <li>Classic Curls</li>
+                <ul>
+                    <li>4 sets of 10 reps</li>
+                </ul>
+                <li>Preacher Curls</li>
+                <ul>
+                    <li>3 sets of 12 reps</li>
+                </ul>
+                <li>Hammer Curls</li>
+                <ul>
+                    <li>4 sets of 12 reps</li>
+                </ul>
+                <li>Barbell Curls</li>
+                <ul>
+                    <li>3 sets of 12 reps</li>
+                </ul>
+            </ul>
+        </div>
     </div>
-    <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolorum a quisquam, molestias dolor dolore nihil molestiae.
-        Sed perspiciatis, cupiditate veritatis ut, inventore quibusdam, aliquam est distinctio saepe qui expedita!</div>
-    <div class="shoulders">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis non aspernatur doloremque doloribus illum dolores
-        rerum nihil dolore pariatur ipsam minus nobis aliquam voluptate totam, dicta qui, voluptatum optio, recusandae.</div>
+    <div class="chest"><span class="title"> Show off those chesticles.</span>
+        <ul>
+            <li>Bench Press</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Chest Flys</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Push Ups</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Decline Bench Press</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Overhead Chest Pull</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="legs"> <span class="title">Time for some new pants - because gainz.</span>
+        <ul>
+            <li>Squat Jumps</li>
+            <ul>
+                <li>4 sets of 15 reps</li>
+            </ul>
+            <li>Wall Sitting</li>
+            <ul>
+                <li>3 sets of 60 seconds</li>
+            </ul>
+            <li>Toe Tippers</li>
+            <ul>
+                <li>4 sets of 25 reps</li>
+            </ul>
+            <li>Step Ups</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="back"><span class="title"> Carry the weight of the world with these</span>
+        <ul>
+            <li>DeadLift</li>
+            <ul>
+                <li>5 sets of 12 reps</li>
+            </ul>
+            <li>Lat Pulldown behind infront superset</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Reachbacks</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="shoulders"><span class="title"> Boulder Shoulders - Lets go</span>
+        <ul>
+            <li>Military Press</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Zig Heils</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Outreach</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Lateral Raise</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Upright Row</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
 
-    <div class="comments">
-        <input type="text" ng-model="commentName" placeholder="Enter a name" />
-        <input type="text" ng-model="commentText" placeholder="What do you think?" />
+    <div>
+        <input type="text" ng-model="commentText" placeholder="What do you think?" style="margin-bottom: 15px;"/>
 
         <button ng-click="addComment()" type="submit">Add Comment</button>
     </div>
 
-    <div ng-repeat="name in username"  class="comments">
-        {{name.$value}} says
-        <div ng-repeat="comment in comments" class='comments'>
-            {{comment.$value}}
-        </div>
+
+    <div ng-repeat="comment in comments" class='comments'
+         style="color: white; background-color: rgba(0,0,0, .5); display: block; width: 17.8%; margin-bottom: 10px;">
+        <span style="color:orange">Anonymous  says:</span> {{comment.$value}}
     </div>
-</div>
 
 </div>
 
-<div ng-controller="bmiCtrl">
-    <form name='whatever'>
-        <input type="text" ng-model='random' ng-change='change()' /> {{hello}}
-    </form>
-    <button ng-click="x = true">Login</button>
-    <button ng-click="x = false">Sign up</button>
-    <div ng-show="x">Login Form</div>
-    <div ng-hide="x">Sign up Form</div>
-
+<div class="bmi" ng-controller="bmiCtrl">
 
     <div>
-        <input type="number" ng-model="height" />Enter your height in inches</div>
+        <input type="number" ng-model="height"/>Height in inches
+    </div>
     <div>
-        <input type="number" ng-model="weight" />Enter your weight</div>
+        <input type="number" ng-model="weight"/>Weight in pounds
+    </div>
     <div>{{results}}</div>
     <button type="submit" ng-click='calculate()'>calculate</button>
 </div>
