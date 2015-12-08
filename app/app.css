@@ -11,6 +11,10 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
     text-align: center;
+    margin-left: 40%;
+    background-color: rgba(0,0,0, .5);
+    width: 20%;
+
 
 }
 
@@ -210,6 +214,9 @@ body {
 }
 
 .bmi {
-
+ margin-top: 3%;
+}
+.motivation {
+    padding-left: 15px;
 }
 
