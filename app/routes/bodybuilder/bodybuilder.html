@@ -1,6 +1,6 @@
 <div ng-controller="DropdownCtrl">
 
-    <div class='picker'>Typically it's best to go with two main muscle groups
+    <div class='picker'>Pick two
 
         <div class='chkdesc'>
             <input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
@@ -21,7 +21,7 @@
     </div>
 
     <div class="arms">
-        <div>The tricep is the largest muscle on the back of your upper arm. </span>
+        <div><span class="title">The tricep is the largest muscle on the back of your upper arm. </span>
             <ul>
                 <li>Tricep Pushdown</li>
                 <ul>
@@ -150,19 +150,18 @@
             </ul>
         </ul>
     </div>
-
-    <div>
+<div id="commentHolder">
+    <div id="enterText" >
         <input type="text" ng-model="commentText" placeholder="What do you think?" style="margin-bottom: 15px;"/>
 
         <button ng-click="addComment()" type="submit">Add Comment</button>
     </div>
 
 
-    <div ng-repeat="comment in comments" class='comments'
-         style="color: white; background-color: rgba(0,0,0, .5); display: block; width: 17.8%; margin-bottom: 10px;">
+    <div ng-repeat="comment in comments" class='comments'>
         <span style="color:orange">Anonymous  says:</span> {{comment.$value}}
     </div>
-
+</div>
 </div>
 
 <div class="bmi" ng-controller="bmiCtrl">

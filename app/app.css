@@ -9,20 +9,23 @@ body {
 
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
-    background-color: rgba(0, 0, 0, .5);
+
+
 }
 
 #single-button {
     font-family: 'Orbitron', sans-serif;
-    background-color: rgba(0, 0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
     color: orange;
     font-size: 30px;
 }
 
 .jumbotron {
     margin: 0;
-    background-color: rgba(0, 0, 0, .5);
+    /*background-color: rgba(0, 0, 0, .5);*/
     text-align: center;
+    background-image: url('./assets/gym-room.jpg');
+    background-size: auto;
 
 }
 
@@ -157,18 +160,54 @@ body {
 
 .chest, .arms, .shoulders, .legs, .back {
     display: none;
-    background-color: rgba(0,0,0, .5);
+    /*background-color: rgba(0,0,0, .5);*/
+    background: linear-gradient(to bottom right, black, grey); /* Standard syntax */
     color:white;
+    width: 33%;
+    margin-left:34%;
 }
 
 .picker{
 
     display: inline-block;
+    margin-left: 45%;
+    background-color:rgba(0,0,0, .5);
+    width: 10%;
+    font-size: 20px;
+    color:orange;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#commentHolder {
+
+    background-color: rgba(0,0,0, .5);
+    width: 35%;
+    margin-left: 33%;
+
+}
+
+#commentHolder > .comments {
+
+    color: white;
+    background: linear-gradient(to bottom right, black, grey);;
+    margin-bottom: 10px;
+
+    display: block;
+    text-align: center;
+}
+
+#commentHolder > #enterText {
+
+   text-align: center;
+    margin-top: 3%;
+    padding-top: 3%;
 
 }
 
 .title{
-
     color: orange;
 
 }
