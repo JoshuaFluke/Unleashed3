@@ -1,6 +1,7 @@
-<div ng-controller="DropdownCtrl">
 
-    <div class='picker'>Pick two
+<div ng-controller="bbCtrl">
+
+    <div class='picker'><span style="color: white; ">Pick two</span>
 
         <div class='chkdesc'>
             <input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
@@ -132,7 +133,7 @@
             <ul>
                 <li>4 sets of 12 reps</li>
             </ul>
-            <li>Zig Heils</li>
+            <li>Straight arms</li>
             <ul>
                 <li>4 sets of 12 reps</li>
             </ul>
@@ -150,7 +151,8 @@
             </ul>
         </ul>
     </div>
-<div id="commentHolder">
+</div>
+<div id="commentHolder" ng-controller="commentCtrl">
     <div id="enterText" >
         <input type="text" ng-model="commentText" placeholder="What do you think?" style="margin-bottom: 15px;"/>
 
@@ -163,16 +165,4 @@
     </div>
 </div>
 </div>
-
-<div class="bmi" ng-controller="bmiCtrl">
-
-    <div>
-        <input type="number" ng-model="height"/>Height in inches
-    </div>
-    <div>
-        <input type="number" ng-model="weight"/>Weight in pounds
-    </div>
-    <div>{{results}}</div>
-    <button type="submit" ng-click='calculate()'>calculate</button>
-</div>
-<script src="app/custom-scripts.js"></script>
+<script src="routes/bodybuilder.js"></script>

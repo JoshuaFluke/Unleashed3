@@ -10,7 +10,7 @@ angular.module('workout')
       controller: 'GoCtrl'
     })
 })
-
+//doesn't actually use the control anywhere
 .controller('GoCtrl', function() {
 
   $('.myButton').on('click', function (event) {
@@ -32,4 +32,4 @@ angular.module('workout')
     $('#content').css('display', 'none')
   });
 
-});
+})

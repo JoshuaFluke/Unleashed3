@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log("ready!");
   $('.myButton').on('click', function (event) {
     $('#content').toggle('display');
     $('#content2').css('display', 'none');
@@ -36,7 +35,7 @@ $(document).ready(function () {
     var shoulders = $("#shoulders").is(":checked");
     var back = $("#back").is(":checked");
 
-    //console.log('wegwegrwe')
+
     if (arms) {
       $(".arms").toggle('display');
       $("#arms").hide();

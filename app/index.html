@@ -22,83 +22,70 @@
     <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body ng-app="workout">
-    <!--[if lt IE 7]>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-        your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <div id="wrapper" ng-controller="DropdownCtrl">
-        <div class="jumbotron">
-            <h1><a ui-sref="go">Unleash The Beast</a></h1>
+<div id="wrapper" >
+    <div class="jumbotron">
+        <h1><a ui-sref="go">Unleash The Beast</a></h1>
 
         <!--- TOP NAV BAR---->
         <div class="navbar">
             <div class="Home"></div>
-            <div id="item1">
+
                 <!-- Motivation button -->
-                <div id="item1">
-                    <div class="btn-group" uib-dropdown is-open="status.isopen">
-                        <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle
-                                ng-disabled="disabled">
-                            Motivation <span class="glyphicon glyphicon-triangle-bottom"> </span>
-                        </button>
-                        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-                            <li role="menuitem"><a href="#">Lifestyle</a></li>
-                            <li role="menuitem"><a href="#">Music</a></li>
+                <div class="motivation" style=" float:left" >
+                <ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Motivation <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Music</a></li>
+                            <li><a href="http://www.facebook.com">Discussion</a></li>
                         </ul>
                     </div>
-                </div>
-
+                </ul>
+                    </div>
                 <!-- Diet button -->
-                <div id="item1">
-                    <div class="btn-group" uib-dropdown is-open="status.isopen">
-                        <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle
-                                ng-disabled="disabled">
-                            Diet <span class="glyphicon glyphicon-triangle-bottom"> </span>
-                        </button>
-                        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-                            <li role="menuitem"><a href="#">Supplements</a></li>
-                            <li role="menuitem"><a href="#">Fit Meals</a></li>
-                        </ul>
+            <div class="tools" style=" float:left" >
+                <ul>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Tools <span class="caret"></span></a>
+                        <div class="dropdown-menu">
+                            <li><a ui-sref="bodymass">BMI Caluclator</a></li>
+                            <li><a href="#">Macro Nutrients Calculator</a></li>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Motivation button -->
-                <div id="item1">
-                    <div class="btn-group" uib-dropdown is-open="status.isopen">
-                        <button id="single-button" type="button" class="btn btn-default" uib-dropdown-toggle
-                                ng-disabled="disabled">
-                            Lifting Buddies <span class="glyphicon glyphicon-triangle-bottom"> </span>
-                        </button>
-                        <ul class="uib-dropdown-menu" role="menu" aria-labelledby="single-button">
-                            <li role="menuitem"><a href="#">Trainers</a></li>
-                            <li role="menuitem"><a href="#">Friends</a></li>
-                        </ul>
-                    </div>
-                </div>
+                </ul>
             </div>
-        </div>
-        </div>
-        <!-------------Main content ----------------->
+                <!-- Motivation button -->
 
-        <div ui-view></div>
+
+        </div>
     </div>
+    <!-------------Main content ----------------->
+
+    <div ui-view></div>
+</div>
 
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/firebase/firebase.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/angularfire/dist/angularfire.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="custom-scripts.js"></script>
-    <script src="app.js"></script>
-    <script src="routes/go/go.js"></script>
-    <script src="routes/agile/agile.js"></script>
-    <script src="routes/athletic/athletic.js"></script>
-    <script src="routes/bodybuilder/bodybuilder.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/firebase/firebase.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angularfire/dist/angularfire.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="app.js"></script>
+<script src="routes/go/go.js"></script>
+<script src="routes/agile/agile.js"></script>
+<script src="routes/athletic/athletic.js"></script>
+<script src="routes/bodybuilder/bodybuilder.js"></script>
+<script src="routes/bmicalculator/BMI.js"></script>
 </body>
 </html>
