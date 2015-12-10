@@ -10,10 +10,10 @@ body {
 
     font-family: 'Orbitron', sans-serif;
     font-size: 30px;
-    text-align: center;
-    margin-left: 40%;
-    background-color: rgba(0,0,0, .5);
-    width: 20%;
+    margin-left: 25em;
+
+
+
 
 
 }
@@ -56,7 +56,7 @@ body {
 
     padding-top: 5px;
     /*margin-left: 30%;*/
-    Float: left;
+    /*Float: left;*/
     color: orange;
 
 }
@@ -212,11 +212,48 @@ body {
     color: orange;
 
 }
-
-.bmi {
- margin-top: 3%;
-}
 .motivation {
     padding-left: 15px;
 }
+/*BMI SECTION CSS----------------------------------*/
 
+
+.bmi {
+    margin-top: 4em;
+    text-align: center;
+    color: Black;
+    background-color: rgba(0,0,0,.5);
+}
+
+#bmitxt {
+
+    color: white;
+}
+
+
+.bmichart {
+    
+    margin-top: 4em;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.results {
+    color:white;
+}
+
+
+.btn-default {
+
+    background-color: rgba(0,0,0,0);
+
+}
+
+.btn-default > a:focus{
+
+    text-decoration: none;
+}
+
+.btn-default > a:hover {
+    text-decoration: none;
+}

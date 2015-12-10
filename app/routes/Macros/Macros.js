@@ -17,3 +17,20 @@ angular.module('workout')
 
 
 })
+
+
+.directive('macros', function(){
+
+  return {
+    restrict: 'EAC',
+    templateUrl: macros.html
+
+
+
+  }
+
+
+
+
+
+})

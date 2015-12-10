@@ -14,7 +14,7 @@ angular.module('workout')
     $scope.calculate = function () {
       var weight = $scope.weight * .45;
       var height = $scope.height * .025;
-
-      $scope.results = weight / Math.pow(height, 2)
+      var results = weight / Math.pow(height, 2)
+      $scope.results = Math.round(results)
     }
     })
