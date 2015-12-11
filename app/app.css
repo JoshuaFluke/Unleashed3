@@ -257,3 +257,8 @@ body {
 .btn-default > a:hover {
     text-decoration: none;
 }
+
+.macros {
+    background-color: rgba(0,0,0,.5);
+    color:white;
+}

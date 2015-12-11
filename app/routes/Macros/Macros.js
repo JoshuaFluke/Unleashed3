@@ -11,26 +11,29 @@ angular.module('workout')
       })
   })
 
-.controller('macrosCtrl', function(){
+.controller('macrosCtrl', function($scope){
 
 
+  $scope.calculate = function(){
 
+    if (!$scope.weight){
+       return $scope.input = true;
+    }
+    else {
+      $scope.input = false;
+    }
 
-})
+    var protein = $scope.weight * .95;
+    var carbs = protein * .4;
+    var fats = protein * .4;
 
+    $scope.presults = Math.round(protein);
 
-.directive('macros', function(){
+    $scope.cresults = Math.round(carbs);
 
-  return {
-    restrict: 'EAC',
-    templateUrl: macros.html
-
-
+    $scope.fresults = Math.round(fats);
 
   }
-
-
-
 
 
 })
