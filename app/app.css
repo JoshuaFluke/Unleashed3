@@ -1,0 +1,237 @@
+body {
+    height: 100%;
+    background-image: url('./assets/gym-weights.jpg');
+    background-size: stretch;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*--------------NavBar CSS----------*/
+.navbar {
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-left: -25%;
+    background-color: rgba(0, 0, 0, .5);
+    left: 50%;
+     width: 50%;
+    
+}
+.home {
+    
+    padding-top: 5px;
+    /*margin-left: 30%;*/
+    float: left;
+    color: orange;
+
+}
+.motivation, .tools {
+    padding-left: 0;
+    display: inline-block;
+}
+
+@media (max-width:600px){
+    
+    .motivation, .tools {
+        font-size: 15px;
+    }
+    
+}
+
+
+
+.jumbotron {
+    margin: 0;
+    /*background-color: rgba(0, 0, 0, .5);*/
+    text-align: center;
+    background-image: url('./assets/gym-room.jpg');
+    background-size: cover;
+
+}
+ /*----------dropdown menus -------*/
+.dropdown-toggle, .jumbotron > h1 > a {
+
+    text-decoration: none;
+    color: orange
+}
+
+.jumbotron > h1 > a:hover {
+
+    color: white
+}
+
+.dropdown-toggle, .dropdown > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown > a:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+.dropdown > a:focus {
+    text-decoration: none;
+
+}
+
+.dropdown {
+    padding-left: 0;
+}
+
+
+#item1 {
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
+}
+
+/* Video Divs */
+
+#content, #content2, #content3 {
+    float: left;
+    margin-left: 20%;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.video-container {
+    float: left;
+
+}
+
+.warrior, .rogue, .monk {
+    float: left;
+    color: orange;
+    width: 500px;
+    font-size: 20px;
+}
+
+.btndiv {
+
+    padding-top: 2.5%;
+    text-align: center;
+
+}
+
+#ID {
+
+    color: orange;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+
+}
+
+#getStarted {
+
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.myButton, .myButton2, .myButton3 {
+    -moz-box-shadow: 0px 0px 20px 0px #fff6af;
+    -webkit-box-shadow: 0px 0px 20px 0px #fff6af;
+    box-shadow: 0px 0px 20px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    -moz-border-radius: 23px;
+    -webkit-border-radius: 23px;
+    border-radius: 0px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 14px 53px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+    margin-right: 15px;
+}
+
+.myButton:hover, .myButton2:hover, .myButton3:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+    text-decoration: none;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.chest, .arms, .shoulders, .legs, .back {
+    display: none;
+    /*background-color: rgba(0,0,0, .5);*/
+    background: linear-gradient(to bottom right, black, grey); /* Standard syntax */
+    color: white;
+    width: 33%;
+    margin-left: 34%;
+    margin-top: 15px;
+}
+
+.picker {
+
+    display: inline-block;
+    margin-left: 45%;
+    background-color: rgba(0, 0, 0, .5);
+    width: 10%;
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#commentHolder {
+
+    background-color: rgba(0, 0, 0, .5);
+    width: 35%;
+    margin-left: 33%;
+
+}
+
+#commentHolder > .comments {
+
+    color: white;
+    background: linear-gradient(to bottom right, black, grey);;
+    margin-bottom: 10px;
+
+    display: block;
+    text-align: center;
+}
+
+#commentHolder > #enterText {
+
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 3%;
+
+}
+
+.title {
+    color: orange;
+
+}
+
+.bmi {
+ margin-top: 3%;
+}
+

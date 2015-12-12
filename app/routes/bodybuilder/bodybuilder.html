@@ -1,0 +1,168 @@
+
+<div ng-controller="bbCtrl">
+
+    <div class='picker'><span style="color: white; ">Pick two</span>
+
+        <div class='chkdesc'>
+            <input type="checkbox" id="arms" name="4[]" value="abc">Arms</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="legs" name="4[]" value="xyz">Legs</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="chest" name="4[]" value="qwe">Chest</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="back" name="4[]" value="pqr">Back</td>
+        </div>
+        <div class='chkdesc'>
+            <input type="checkbox" id="shoulders" name="4[]" value="pqr">Shoulders</td>
+        </div>
+        <button type="submit" class="go" ng-click="counter">Get at it!</button>
+    </div>
+
+    <div class="arms">
+        <div><span class="title">The tricep is the largest muscle on the back of your upper arm. </span>
+            <ul>
+                <li>Tricep Pushdown</li>
+                <ul>
+                    <li>4 sets of 12 reps</li>
+                </ul>
+                <li>Close Grip Bench Press</li>
+                <ul>
+                    <li>3 sets of 12</li>
+                </ul>
+                <li>Overhead Tricep Extension</li>
+                <ul>
+                    <li>4 sets of 10</li>
+                </ul>
+                <li>Bent Tricep Extension</li>
+                <ul>
+                    <li>3 sets of 12</li>
+                </ul>
+                <li>Dips <span>There can be modifications for this</span></li>
+                <ul>
+                    <li>4 sets of</li>
+                </ul>
+            </ul>
+        </div>
+        <div><span class="title">Biceps: Pull yourself over that ledge.</span>
+            <ul>
+                <li>Classic Curls</li>
+                <ul>
+                    <li>4 sets of 10 reps</li>
+                </ul>
+                <li>Preacher Curls</li>
+                <ul>
+                    <li>3 sets of 12 reps</li>
+                </ul>
+                <li>Hammer Curls</li>
+                <ul>
+                    <li>4 sets of 12 reps</li>
+                </ul>
+                <li>Barbell Curls</li>
+                <ul>
+                    <li>3 sets of 12 reps</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="chest"><span class="title"> Show off those chesticles.</span>
+        <ul>
+            <li>Bench Press</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Chest Flys</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Push Ups</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Decline Bench Press</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Overhead Chest Pull</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="legs"> <span class="title">Time for some new pants - because gainz.</span>
+        <ul>
+            <li>Squat Jumps</li>
+            <ul>
+                <li>4 sets of 15 reps</li>
+            </ul>
+            <li>Wall Sitting</li>
+            <ul>
+                <li>3 sets of 60 seconds</li>
+            </ul>
+            <li>Toe Tippers</li>
+            <ul>
+                <li>4 sets of 25 reps</li>
+            </ul>
+            <li>Step Ups</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="back"><span class="title"> Carry the weight of the world with these</span>
+        <ul>
+            <li>DeadLift</li>
+            <ul>
+                <li>5 sets of 12 reps</li>
+            </ul>
+            <li>Lat Pulldown behind infront superset</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Reachbacks</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+    <div class="shoulders"><span class="title"> Boulder Shoulders - Lets go</span>
+        <ul>
+            <li>Military Press</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Straight arms</li>
+            <ul>
+                <li>4 sets of 12 reps</li>
+            </ul>
+            <li>Outreach</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Lateral Raise</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+            <li>Upright Row</li>
+            <ul>
+                <li>3 sets of 12 reps</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<div id="commentHolder" ng-controller="commentCtrl">
+    <div id="enterText" >
+        <input type="text" ng-model="commentText" placeholder="What do you think?" style="margin-bottom: 15px;"/>
+
+        <button ng-click="addComment()" type="submit">Add Comment</button>
+    </div>
+
+
+    <div ng-repeat="comment in comments" class='comments'>
+        <span style="color:orange">Anonymous  says:</span> {{comment.$value}}
+    </div>
+</div>
+</div>
+<script src="routes/bodybuilder.js"></script>

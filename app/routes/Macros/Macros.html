@@ -1,0 +1,27 @@
+<div class="macros" ng-controller="macrosCtrl">Macros are your top nutrients that you need to build muscle, lose fat are
+    maintain your weight.
+
+
+<div>    These are Protein, Carbohydrates, and Fats Research suggests that if you are exercising regularly you need between
+    .8g and 1g of protein per pound of body weight.</div>
+
+   <div> Changes in carbohydrate intake will regulate how fast you gain muscle or lose fat.</div>
+</div>
+<div><input type="radio" name='purpose'ng-model="lean">Fat loss
+    <input type="radio" name="purpose" ng-model="gainz">Muscle Building
+</div>
+
+<div><input type="radio" name="Sex" ng-model="male">Male
+    <input type="radio" name="Sex" ng-model="female">Female
+</div>
+
+<input type="number" ng-model="weight" placeholder="Weight in pounds">Weight in pounds
+<div ng-show="input">Please enter a value</div>
+
+
+<div>Protein:{{results.presults}}</div>
+<div>Carbs:{{results.cresults}}</div>
+<div>Fats:{{results.fresults}}</div>
+
+
+<button type=submit ng-click="calculate()">Calculate</button>
