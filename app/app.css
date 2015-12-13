@@ -254,6 +254,16 @@ body {
     color:orange;
     width: 800px;
     margin: 50px auto 0 auto;
+    padding: 16px 0;
 }
 
+.odd {
+    background-color: rgba(0,0,0, .6);
+}
 
+.break {
+    border: 0;
+    height: 1px;
+    background: #000;
+    margin: 16px 64px;
+}
