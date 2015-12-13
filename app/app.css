@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background-image: url('./assets/gym-weights.jpg');
+    background-image: url('sassets/gym-weights.jpg');
     background-size: stretch;
     font-family: 'Orbitron', sans-serif;
 }
@@ -44,7 +44,7 @@ body {
     margin: 0;
     /*background-color: rgba(0, 0, 0, .5);*/
     text-align: center;
-    background-image: url('./assets/gym-room.jpg');
+    background-image: url('sassets/gym-room.jpg');
     background-size: cover;
 
 }
