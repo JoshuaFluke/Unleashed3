@@ -47,6 +47,7 @@ angular.module('workout')
     var protein = weight * .95;
     var carbs = protein * .4;
     var fats = protein * .4;
+      var calories = ((protein * 4) + (carbs *4) + (fats * 9))
     
     
     obj.presults = Math.round(protein); //adds presults with a value of protein to object
@@ -54,6 +55,8 @@ angular.module('workout')
     obj.cresults = Math.round(carbs);
 
     obj.fresults = Math.round(fats);
+
+      obj.calories = Math.round(calories);
 
     return obj;
   }

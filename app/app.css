@@ -12,7 +12,7 @@ body {
     font-size: 30px;
     text-align: center;
     margin-left: -25%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .75);
     left: 50%;
      width: 50%;
     
@@ -30,7 +30,7 @@ body {
     display: inline-block;
 }
 
-@media (max-width:600px){
+@media (max-width:788px){
     
     .motivation, .tools {
         font-size: 15px;
@@ -46,13 +46,15 @@ body {
     text-align: center;
     background-image: url('sassets/gym-room.jpg');
     background-size: cover;
+    border-bottom: 3px solid rgba(0,0,0,.75);
 
 }
  /*----------dropdown menus -------*/
 .dropdown-toggle, .jumbotron > h1 > a {
 
     text-decoration: none;
-    color: orange
+    color: orange;
+    text-shadow: 5px 5px 2.5px rgba(0,0,0, .5);
 }
 
 .jumbotron > h1 > a:hover {
@@ -89,10 +91,11 @@ body {
 /* Video Divs */
 
 #content, #content2, #content3 {
-    float: left;
-    margin-left: 20%;
+    display: inline-block;
+    text-align: left;
     position: relative;
-    background-color: rgba(0, 0, 0, .5)
+    border: 1px solid rgba(0,0,0,.75);
+    background-color: rgba(0, 0, 0, .75);
 }
 
 .video-container {
@@ -104,7 +107,14 @@ body {
     float: left;
     color: orange;
     width: 500px;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 16px;
+
+
+}
+
+.video-container {
+    height: 360px;
 }
 
 .btndiv {
@@ -115,7 +125,7 @@ body {
 }
 
 #ID {
-
+    text-shadow: 3px 3px 1.5px rgba(0,0,0, .4);
     color: orange;
     font-size: 30px;
     padding-top: 50px;
@@ -126,23 +136,21 @@ body {
 #getStarted {
 
     position: absolute;
-    bottom: 50px;
-    right: 50px;
+    bottom: 16px;
+    right: 16px;
+
 
 }
 
 .myButton, .myButton2, .myButton3 {
-    -moz-box-shadow: 0px 0px 20px 0px #fff6af;
-    -webkit-box-shadow: 0px 0px 20px 0px #fff6af;
-    box-shadow: 0px 0px 20px 0px #fff6af;
+   box-shadow: 3px 3px 1.5px rgba(0,0,0, .4);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
     background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: -ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
-    background-color: #ffec64;
+        background-color: #ffec64;
     -moz-border-radius: 23px;
     -webkit-border-radius: 23px;
     border-radius: 0px;
@@ -157,6 +165,7 @@ body {
     text-decoration: none;
     text-shadow: 0px 1px 0px #ffee66;
     margin-right: 15px;
+    text-decoration: none;
 }
 
 .myButton:hover, .myButton2:hover, .myButton3:hover {
@@ -166,8 +175,10 @@ body {
     background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
     background: -ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
     background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
     background-color: #ffab23;
+    text-decoration: none;
+}
+.myButton:focus, .myButton2:focus, .myButton3:focus {
     text-decoration: none;
 }
 
@@ -234,4 +245,15 @@ body {
 .bmi {
  margin-top: 3%;
 }
+
+
+/*MACRO PAGE CSS----------------------*/
+
+.container-custom {
+    background-color:rgba(0,0,0, .8);
+    color:orange;
+    width: 800px;
+    margin: 50px auto 0 auto;
+}
+
 

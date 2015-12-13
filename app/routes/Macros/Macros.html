@@ -1,27 +1,53 @@
-<div class="macros" ng-controller="macrosCtrl">Macros are your top nutrients that you need to build muscle, lose fat are
-    maintain your weight.
+
+<div class="container-custom" ng-controller="macrosCtrl">
+    <div class="row">
+        <div class="col-md-1"><!-- Bump it over --></div>
+        <div class="col-md-10">
+            <p>Macros are your top nutrients that you need to build muscle, lose fat are
+            maintain your weight.
+            </p>
+
+            <p> These are Protein, Carbohydrates, and Fats Research suggests that if you are exercising regularly you need
+                between
+                .8g and 1g of protein per pound of body weight.
+            </p>
+
+            <p> Changes in carbohydrate intake will regulate how fast you gain muscle or lose fat.
+            </p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"><!-- Bump it over --></div>
+        <div class="col-xs-6">
+            <div>
+                <input type="radio" name='purpose' ng-model="lean">Fat loss
+                <input type="radio" name="purpose" ng-model="gainz">Muscle Building
+            </div>
+
+            <div>
+                <input type="radio" name="Sex" ng-model="male">Male
+                <input type="radio" name="Sex" ng-model="female">Female
+            </div>
+
+            <input type="number" ng-model="weight" placeholder="Weight in pounds">
+            <div ng-show="input">Please enter a value</div>
 
 
-<div>    These are Protein, Carbohydrates, and Fats Research suggests that if you are exercising regularly you need between
-    .8g and 1g of protein per pound of body weight.</div>
 
-   <div> Changes in carbohydrate intake will regulate how fast you gain muscle or lose fat.</div>
+
+
+            <button type=submit ng-click="calculate()">Calculate</button>
+        </div>
+        <div class="col-xs-3">
+            <div ng-if="results.presults > 0">Protein:{{results.presults}}</div>
+            <div ng-if="results.cresults > 0">Carbs:{{results.cresults}}</div>
+            <div ng-if="results.fresults > 0">Fats:{{results.fresults}}</div>
+            <div ng-if="results.calories > 0">Calories: {{results.calories}} </div>
+        </div>
+
+
+    </div>
+
 </div>
-<div><input type="radio" name='purpose'ng-model="lean">Fat loss
-    <input type="radio" name="purpose" ng-model="gainz">Muscle Building
-</div>
 
-<div><input type="radio" name="Sex" ng-model="male">Male
-    <input type="radio" name="Sex" ng-model="female">Female
-</div>
-
-<input type="number" ng-model="weight" placeholder="Weight in pounds">Weight in pounds
-<div ng-show="input">Please enter a value</div>
-
-
-<div>Protein:{{results.presults}}</div>
-<div>Carbs:{{results.cresults}}</div>
-<div>Fats:{{results.fresults}}</div>
-
-
-<button type=submit ng-click="calculate()">Calculate</button>
