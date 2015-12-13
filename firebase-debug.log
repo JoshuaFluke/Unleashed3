@@ -1,0 +1,54 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      A:\Program Files\nodejs\node.exe A:\Users\Josh\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Platform:     win32
+[debug] Node Version: v5.0.0
+[debug] Time:         Sat Dec 12 2015 16:54:36 GMT-0700 (Mountain Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'liftfriendly'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing app directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/liftfriendly/uploads/-K5NbYGUES2m7fNPYdTw?token=XXX&fileCount=347&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      A:\Program Files\nodejs\node.exe A:\Users\Josh\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Platform:     win32
+[debug] Node Version: v5.0.0
+[debug] Time:         Sat Dec 12 2015 16:59:53 GMT-0700 (Mountain Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'liftfriendly'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing app directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/liftfriendly/uploads/-K5Nckq_BBWJrij5y48N?token=XXX&fileCount=347&message= 
+[debug] <<< HTTP RESPONSE 200
+[debug] ----------------------------------------------------------------------
+[debug] Command:      A:\Program Files\nodejs\node.exe A:\Users\Josh\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Platform:     win32
+[debug] Node Version: v5.0.0
+[debug] Time:         Sat Dec 12 2015 17:03:16 GMT-0700 (Mountain Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/firebase/liftfriendly/token?token=XXX 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'liftfriendly'...
+[info] 
+[info] i  deploying hosting
+[info] i  preparing app directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/firebase/liftfriendly/uploads/-K5NdXLPdTpaTvs1t67m?token=XXX&fileCount=347&message= 
+[debug] <<< HTTP RESPONSE 200
