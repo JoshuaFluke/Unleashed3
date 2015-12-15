@@ -45,9 +45,10 @@ body {
     position: relative;
     height: 400px;
     background-image: url("sassets/gym-room.jpg");
-    background-size: 600px auto;
+    background-size: auto;
     background-position: top center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     text-align: center;
     border-bottom: solid black 3px;
     overflow: auto;
@@ -277,4 +278,77 @@ body {
     height: 1px;
     background: #000;
     margin: 16px 64px;
+}
+
+button {
+    color:black;
+}
+/*SPOTIFY API PAGE*/
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+#navbar {
+    background-color: rgba(0,0,0,.85);
+    width: 100%;
+    padding: 1.3em 1em 1em 1em;
+}
+
+#navbar > span {
+    font-weight: bold;
+    color: #fff;
+}
+
+#spotinput {
+    border-radius: 3px;
+    color: black;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 9px;
+    padding: 4px;
+    border: 1px solid #ddd;
+}
+
+#spotbtn {
+    color: black;
+    background-color: white;
+    line-height: 18px;
+    height: 28px;
+    border: 0;
+    border-radius: 2px;
+    display: inline-block;
+}
+/* results */
+
+.result {
+    background-color: rgba(0,0,0,.3);
+    margin: 1em;
+    color:white
+}
+
+.result > a {
+    color: black;
+}
+
+.tracks {
+    padding: 10px 0; /* top/bottom 10, left/right 0 */
+}
+
+.tracks > div {
+    float: right;
+    padding-right: 10px;
+    color: gray;
+}
+
+.albumart {
+    float: left;
+    padding: 10px;
+}
+
+.clearfix {
+    overflow: auto;
 }

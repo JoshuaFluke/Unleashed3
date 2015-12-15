@@ -1,8 +1,8 @@
 <div ng-controller="spotifyCtrl">
 <div id="navbar">
-    <input type="text" placeholder="Filter by song" ng-model="filterInput.name">
-    <input type="text" placeholder="Song, artist, or track" ng-model="searchInput"/>
-    <button ng-click="searchStuff()">Search</button>
+    <input id="spotinput" type="text" placeholder="Song, artist, or track" ng-model="searchInput"/>
+    <input id="spotinput"type="text" placeholder="Filter by song" ng-model="filterInput.name">
+    <button id="spotbtn" ng-click="searchStuff()">Search</button>
 </div>
 <div class="result clearfix" ng-repeat="result in results | filter:filterInput:strict">
     <a href="https://play.spotify.com/track/{{result.id}}" target="_blank">
