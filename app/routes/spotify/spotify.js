@@ -2,8 +2,6 @@
  * Created by jfluke on 12/15/2015.
  */
 angular.module('workout', [])
-
-
   .config(function ($stateProvider) {
       $stateProvider
         .state('spotify', {
@@ -14,7 +12,7 @@ angular.module('workout', [])
   })
 
 
-.controller("spotfiyCtrl", function($scope, myFactory) {
+.controller("spotifyCtrl", function($scope, myFactory) {
 
 
     $scope.searchStuff = function(){
