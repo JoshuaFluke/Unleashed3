@@ -1,7 +1,7 @@
 /**
  * Created by jfluke on 12/15/2015.
  */
-angular.module('workout', [])
+angular.module('workout')
   .config(function ($stateProvider) {
       $stateProvider
         .state('spotify', {
