@@ -29,7 +29,8 @@
 
 <div id="wrapper" >
     <div class="jumbotron">
-        <h1><a ui-sref="go">Unleash The Beast</a></h1>
+
+        <h1><a ui-sref="go"><span id="unleash">Unleash The Beast</span></a></h1>
 
         <!--- TOP NAV BAR---->
         <div class="navbar">
@@ -42,7 +43,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Motivation <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Music</a></li>
+                            <li><a ui-sref="spotify">Music</a></li>
                             <li><a href="http://www.facebook.com">Discussion</a></li>
                         </ul>
                     </div>
@@ -65,9 +66,11 @@
 
 
         </div>
+
     </div>
     <!-------------Main content ----------------->
     <div ui-view></div>
+    <div style="height:600px;"></div>
 </div>
 
 
