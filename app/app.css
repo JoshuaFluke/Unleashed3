@@ -255,9 +255,35 @@ body {
 
 }
 
+/*BMI PAGE--------------------------*/
+
 .bmi {
     margin-top: 3%;
+    margin-left: 25.5%;
+    background-color: rgba(0,0,0,.5);
+    width:50%;
+    position: center;
+    border: 1px solid black;
 }
+
+#description {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:orange;
+}
+
+.col-xs-12{
+
+    padding-top: 10px;
+}
+
+.chart{
+    margin-top: 30px;
+    margin-left:5%;
+    margin-bottom: 30px;
+
+}
+
 
 /*MACRO PAGE CSS----------------------*/
 

@@ -10,11 +10,22 @@ angular.module('workout')
 
   .controller('bmiCtrl', function ($scope) {
 
-
     $scope.calculate = function () {
-      var weight = $scope.weight * .45;
-      var height = $scope.height * .025;
 
-      $scope.results = weight / Math.pow(height, 2)
+      if(!$scope.height && !$scope.weight){
+        $scope.results = 'Please enter values'
+      }
+      else if (!$scope.height || !$scope.weight){
+        $scope.results = 'Please enter values'
+      }
+
+      else{
+
+        var weight = $scope.weight * .45;
+        var height = $scope.height * .025;
+
+        $scope.results = Math.floor(weight / Math.pow(height, 2));
+      }
     }
+
     })

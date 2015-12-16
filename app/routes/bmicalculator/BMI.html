@@ -1,8 +1,8 @@
 <div class="bmi" ng-controller="bmiCtrl">
-
+    <div class="contain2">
     <div class="row">
         <div class="col-md-10">
-            <p>BMI (Body Mass Index) This tool helps you understand where you should be according to your age.
+            <p id="description">BMI (Body Mass Index) This tool helps you understand where you should be according to your age.
             </p>
 
         </div>
@@ -11,12 +11,17 @@
 
     <div class="row">
     <div class="col-xs-12">
-        <input type="number" ng-model="height"/>Height in inches
+        <input  type="number" ng-model="height" /><span id="description">Height in inches</span>
     </div>
     <div class="col-xs-12">
-        <input type="number" ng-model="weight"/>Weight in pounds
+        <input type="number" ng-model="weight"/><span id="description">Weight in pounds</span>
     </div>
     </div>
-    <div>{{results}}</div>
-    <button type="submit" ng-click='calculate()'>calculate</button>
+
+    <div id="description">{{results}}</div>
+    <button type="submit" ng-click='calculate()'>Calculate</button>
+    </div>
+    <div>
+        <img class="chart" src="sassets/bmi-chart.png"/>
+    </div>
 </div>
