@@ -1,0 +1,1 @@
+"use strict";angular.module("workout",["ngAnimate","ui.bootstrap","ui.router","firebase"]).config(function(e){e.otherwise("/")}).constant("fb",{url:"https://liftfriendly.firebaseio.com/"}).factory("fbRef",function(e){return new Firebase(e.url)}).service("fbService",function(e,t,r){this.getAllComments=function(){var t=r.child("comments");return e(t)}});

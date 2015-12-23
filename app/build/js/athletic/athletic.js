@@ -1,0 +1,1 @@
+"use strict";angular.module("workout").config(function(t){t.state("athletic",{url:"/athletic",templateUrl:"routes/athletic/athletic.html"})}).controller("athleticCtrl",function(){});

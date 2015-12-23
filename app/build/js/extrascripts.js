@@ -1,0 +1,1 @@
+$scope.hello="enter a name",$scope.x=!0,$scope.change=function(){""==$scope.random&&$scope.whatever.$dirty?($scope.hello="enter a name",$scope.showbtn=!1):($scope.hello="hello "+$scope.random,$scope.showbtn=!0)};

@@ -3,16 +3,30 @@ var uglify = require('gulp-uglify'); //loaded the gulp plugin through node's req
 var livereload = require('gulp-livereload');
 var minifyCSS = require('gulp-minify-css');
 var prefix = require('gulp-autoprefixer');
-var sass = require('gulp-sass'); //unused and unloaded yet.
+//var sass = require('gulp-sass'); //unused and unloaded yet.gulp
 
+
+//handles errors
+function handleErrors(error){
+  console.error(error);
+  this.emit('end'); //gulp method
+}
+
+gulp.task('styles:reload', function(){
+
+  return gulp.src('app/app.css')
+    .pipe(livereload({auto:false}));
+
+})
 
 //modifies styles
 gulp.task('styles', function () {   //go to command line and type gulp styles
 
   console.log('starting styles!');
-  gulp.src('app/app.css')  // path to file to be uglified
+  return gulp.src('app/app.css')  // path to file to be uglified
     .pipe(prefix('last 2 versions'))
     .pipe(minifyCSS()) // the task (plugin)
+    .on('error', handleErrors)
     .pipe(gulp.dest('app/build/css'));
 })
 
@@ -22,8 +36,9 @@ gulp.task('styles', function () {   //go to command line and type gulp styles
 gulp.task('scripts', function () {
 
   console.log('starting scripts');
-  gulp.src('app/routes/Macros/Macros.js')  // path to file to be uglified
+  return gulp.src('app/**/**/*.js')  // path to file to be uglified
     .pipe(uglify()) // the task (plugin)
+    .on('error', handleErrors)
     .pipe(gulp.dest('app/build/js/'));  //where the build will be sent to
 
 });
@@ -49,8 +64,8 @@ gulp.task('watch', function () {
   gulp.watch('app/routes/Macros/Macros.html')
     .on('change', livereload.changed);
 
-  gulp.watch('app/app.css', ['styles'])
-    .on('change', livereload.changed);
+  gulp.watch('app/app.css', ['styles', 'styles:reload'])
+    //.on('change', livereload.changed); ---removed for race conditions
 
 
 });

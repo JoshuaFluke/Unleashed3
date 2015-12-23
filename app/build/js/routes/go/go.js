@@ -1,0 +1,1 @@
+"use strict";angular.module("workout").config(function(t){t.state("go",{url:"/go",templateUrl:"routes/go/go.html",controller:"GoCtrl"})}).controller("GoCtrl",function(t){t.content=!1,t.content2=!1,t.content3=!1,t.showcontent=function(o){t.content="Bodybuilder"===o,t.content2="Athletic"===o,t.content3="Agile"===o}});
