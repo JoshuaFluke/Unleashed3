@@ -3,6 +3,9 @@ var uglify = require('gulp-uglify'); //loaded the gulp plugin through node's req
 var livereload = require('gulp-livereload');
 var minifyCSS = require('gulp-minify-css');
 var prefix = require('gulp-autoprefixer');
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
+var concat = require('gulp-concat');
 //var sass = require('gulp-sass'); //unused and unloaded yet.gulp
 
 
@@ -36,7 +39,14 @@ gulp.task('styles', function () {   //go to command line and type gulp styles
 gulp.task('scripts', function () {
 
   console.log('starting scripts');
-  return gulp.src('app/**/**/*.js')  // path to file to be uglified
+  return gulp.src('app/routes/**/*.js')  // path to file to be uglified
+    .pipe(jshint()) //scans files for errors
+    .pipe(jshint.reporter(stylish))  // reports the errors
+    .pipe(jshint.reporter('fail'))
+    .on('error', function(){
+      this.emit('end')
+    })
+    .pipe(concat('scripts.min.js'))
     .pipe(uglify()) // the task (plugin)
     .on('error', handleErrors)
     .pipe(gulp.dest('app/build/js/'));  //where the build will be sent to
